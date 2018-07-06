@@ -1570,7 +1570,7 @@ class Resource(EObject):
                             #flush the buffer every once in a while.
                             f.flush()
                 f.flush()  # and one last flush.
-            except Exception, e:
+            except Exception as e:
                 sys.stderr.write(e)
             finally:
                 response.close()
