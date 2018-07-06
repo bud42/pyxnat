@@ -600,7 +600,7 @@ class CObject(object):
                     )
 
             if DEBUG:
-                print uri + query_string
+                print(uri + query_string)
             jtable = self._intf._get_json(uri + query_string)
 
 
