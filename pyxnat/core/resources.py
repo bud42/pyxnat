@@ -1672,7 +1672,7 @@ class Resource(EObject):
             #use compression if avaiable.
             fzip = zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED)
         except RuntimeError:
-            print "Zip compression not supported for uploading files."
+            print("Zip compression not supported for uploading files.")
             fzip = zipfile.ZipFile(zip_name, 'w')
 
         for src in sources:
