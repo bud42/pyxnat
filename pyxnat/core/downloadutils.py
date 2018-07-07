@@ -151,7 +151,7 @@ def download(dest_dir, instance=None, type="ALL", name=None, extract=False, safe
             response.close()
 
     if DEBUG:
-        print zip_location
+        print(zip_location)
 
     ##
 
