@@ -1834,11 +1834,11 @@ class File(EObject):
             dest = os.path.join(os.path.expanduser("~"), 'Downloads', self.id())
             if not ensure_dir_exists(os.path.dirname(dest)):
                 if DEBUG:
-                    print "File.get: failed to create dir"
+                    print("File.get: failed to create dir")
                 raise DataError('Cannot create dir for file: %s' % (dest))
 
         if DEBUG:
-            print "get_file:", dest
+            print("get_file:", dest)
 
         with open(dest, 'wb') as f:
             response = self._intf.get(self._uri, stream=True)
