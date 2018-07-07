@@ -1945,8 +1945,8 @@ class File(EObject):
             self._absuri = self._absuri.split('?')[0]
 
         if DEBUG:
-            print 'INSERT FILE', os.path.exists(src)
-            print "URI is: " + self._absuri
+            print('INSERT FILE', os.path.exists(src))
+            print("URI is: " + self._absuri)
 
         response = None
         if isFile:
