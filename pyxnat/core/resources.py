@@ -1576,7 +1576,7 @@ class Resource(EObject):
                 response.close()
 
         if DEBUG:
-            print zip_location
+            print(zip_location)
 
         fzip = zipfile.ZipFile(zip_location, 'r')
         fzip.extractall(path=dest_dir)
